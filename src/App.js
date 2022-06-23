@@ -5,6 +5,7 @@ import About from "./Components/About";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NoteState from "./context/notes/NoteState";
+import Alert from "./Components/Alert";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NoteState>
         <Router>
           <Navbar />
+          <Alert message="This is my notebook on cloud"/>
           <div className="container">
           <Routes> 
             <Route path="/" element={<Home/>} />
