@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import NoteContext from "./noteContext";
+import noteContext from "./noteContext";
 
 const NoteState=(props)=>{
     const host= "http://localhost:5000"
@@ -105,9 +105,9 @@ const NoteState=(props)=>{
       }
 
     return (
-        <NoteContext.Provider value={{notes, addNote, deleteNote, editNote, getNotes}}>
+        <noteContext.Provider value={{notes, addNote, deleteNote, editNote, getNotes}}>
             {props.children}
-        </NoteContext.Provider>
+        </noteContext.Provider>
     )
 
     }
