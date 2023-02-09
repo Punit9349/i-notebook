@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import noteContext from "./noteContext";
+import noteContext from "./NoteContext";
 
 const NoteState=(props)=>{
     const host= "http://localhost:5000"
