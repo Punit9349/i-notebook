@@ -1,8 +1,23 @@
-const connectToMongo= require('./db');
+// const connectToMongo= require('./db');
 const express = require('express')
 var cors= require('cors')
 
-connectToMongo();
+const mongoose = require('mongoose')
+
+const url = `mongodb+srv://iNote:Book123@cluster0.thuuv13.mongodb.net/?retryWrites=true&w=majority`;
+
+const connectionParams={
+   
+}
+mongoose.connect(url,connectionParams)
+    .then( () => {
+        console.log('Connected to the database ')
+    })
+    .catch( (err) => {
+        console.error(`Error connecting to the database. n${err}`);
+    })
+
+// connectToMongo();
 const app = express()
 const port = 5000 || process.env.PORT
 

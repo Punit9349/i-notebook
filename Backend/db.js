@@ -1,10 +1,12 @@
-const mongoose= require('mongoose');
-const mongoURI="mongodb://localhost:27017/iNotebook";
+// const mongoose= require('mongoose');
+// const mongoURI="mongodb://localhost:27017/iNotebook";
 
-const connectToMongo = ()=>{
-    mongoose.connect(mongoURI, ()=>{
-        console.log("Connected to Mongo successfully");
-    })
-}
+// const connectToMongo = ()=>{
+//     mongoose.connect(mongoURI, ()=>{
+//         console.log("Connected to Mongo successfully");
+//     })
+// }
 
-module.exports=connectToMongo;
+// module.exports=connectToMongo;
+
+
